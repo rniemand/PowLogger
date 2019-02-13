@@ -1,0 +1,10 @@
+{
+  "PowDataUrl": "http://10.0.0.89/ay",
+  "CurrentDevice": "GamingPC",
+  "PowName": "AnetA8-Pow",
+  "CollectionInterval": 1000,
+  "CooldownSec": 10,
+  "InfluxDBServer": "http://10.0.0.50:8086",
+  "InfluxDBDatabase": "data",
+  "HostName": "{host}" 
+}
