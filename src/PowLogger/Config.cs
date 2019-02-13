@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using Newtonsoft.Json;
 
 namespace PowLogger
@@ -21,9 +22,12 @@ namespace PowLogger
     // Helper methods
     private static void LoadConfigFile()
     {
+      Log.Debug($"Looking for configuration file in: {ConfigFile}");
+
       if (!File.Exists(ConfigFile))
       {
         Log.Error($"No configuration file found: {ConfigFile}");
+        Environment.Exit(1);
         return;
       }
 
